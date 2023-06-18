@@ -1,0 +1,228 @@
+/
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+
+    ChemECar Monitoring
+
+  </title>
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+  <!-- Material Icons -->
+  <script src="https://kit.fontawesome.com/6e48bde848.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Files -->
+
+  <link id="pagestyle" href="material-dashboard.css?v=3.1.0" rel="stylesheet" />
+  
+
+</head>
+
+
+<body class="bg-gray-100 ">
+
+  <div class="container-fluid py-4 ">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 position-relative z-index-2">
+        <div class="card card-plain mb-4">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="d-flex flex-column h-100">
+                  <h2 class="font-weight-bolder mb-0">Chem E-Car Dashboard</h2>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 col-sm-5">
+            <div class="card  mb-2">
+              <div class="card-header p-3 pt-2">
+                <div
+                  class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="fa-solid fa-arrows-left-right opacity-10" style="color: #ffffff;"></i>
+                </div>
+                <div class="text-end pt-1">
+                  <p class="text-sm mb-0 text-capitalize">Tilt</p>
+                  <h4 id="tilt" class="mb-0">0</h4>
+                </div>
+              </div>
+
+              <hr class="dark horizontal my-0">
+              <div class="card-footer p-3">
+                <p class="mb-0"><span class="text-success text-sm font-weight-bolder"></span>kemiringan dari mobil</p>
+              </div>
+            </div>
+
+            <div class="card  mb-2">
+              <div class="card-header p-3 pt-2">
+                <div
+                  class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="fa-solid fa-gauge-high opacity-10" style="color: #ffffff;"></i>
+                </div>
+                <div class="text-end pt-1">
+                  <p class="text-sm mb-0 text-capitalize">Speed</p>
+                  <h4 id="speed" class="mb-0">0</h4>
+                </div>
+              </div>
+
+              <hr class="dark horizontal my-0">
+              <div class="card-footer p-3">
+                <p class="mb-0"><span class="text-success text-sm font-weight-bolder"></span>Kecepatan mobil</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-5 col-sm-5 mt-sm-0 mt-4">
+            <div class="card  mb-2">
+              <div class="card-header p-3 pt-2 bg-transparent">
+                <div
+                  class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="fa-solid fa-temperature-high opacity-10" style="color: #ffffff;"></i>
+                </div>
+                <div class="text-end pt-1">
+                  <p class="text-sm mb-0 text-capitalize ">Temperature</p>
+                  <h4 id="temperature" class="mb-0 ">0</h4>
+                </div>
+              </div>
+
+              <hr class="horizontal my-0 dark">
+              <div class="card-footer p-3">
+                <p class="mb-0 "><span class="text-success text-sm font-weight-bolder"></span>Temperatur mesin mobil</p>
+              </div>
+            </div>
+
+            <div class="card ">
+              <div class="card-header p-3 pt-2 bg-transparent">
+                <div
+                  class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
+                  <i class="fa-solid fa-road opacity-10" style="color: #ffffff;"></i>
+                </div>
+                <div class="text-end pt-1">
+                  <p class="text-sm mb-0 text-capitalize ">Distance</p>
+                  <h4 id="distance" class="mb-0 ">0</h4>
+                </div>
+              </div>
+
+              <hr class="horizontal my-0 dark">
+              <div class="card-footer p-3">
+                <p class="mb-0 ">Jarak yang telah ditempuh</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+ 
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-dashboard.min.js?v=3.1.0"></script>
+</body>
+
+</html>
